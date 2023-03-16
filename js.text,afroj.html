@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+html/js.text,afroj.html-    <title>input</title>
+    <style>
+        #name{
+            background-color: rgb(190, 230, 16);
+            border: 1px solid yellow;
+        }
+        .ok{
+            background-color: red;
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="name"placeholder="Inter your name" id="name">
+    <button onclick="ok()">
+    ok
+    </button>
+    <div class="ok">
+
+    </div>
+</body>
+<script type="text/javascript">
+    function ok(){
+        alert ("yes");
+        var name = document.getElementById('name').value;
+        var string = "hello"+name;
+        document.getElementsByClassName('ok')[0].innerHTML = string;
+    }
+</script>
+</html>
